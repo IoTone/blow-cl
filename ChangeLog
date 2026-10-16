@@ -1,0 +1,15 @@
+2026-10-16  blow-cl 0.5.0
+
+	Initial release of blow-cl, a modern rewrite of BLOW 0.4
+	by Anthony Green <green@spindazzle.org>.
+
+	* Replaced Makefile and the `blow` generator script with Gradle 8.
+	* Replaced Winstone/Tomcat-6 with embedded Jetty 11 (Jakarta Servlet 5).
+	* Replaced vendored 2009 abcl.jar with ABCL 1.9.2 from Maven Central.
+	* Rewrote all Java interop from jfli to ABCL's built-in JAVA package.
+	* Replaced vendored cl-who/cl-ppcre/cl-emb/etc. with Quicklisp loads.
+	* Replaced the mime.types table with java.nio.file.Files.probeContentType.
+	* Added path-traversal and WEB-INF/META-INF protection to static serving.
+	* Proper 404 status on the fallback page (the 2009 TODO).
+	* Deferred: rdf.lisp (Jena 2.x -> 5.x is a separate port), war packaging,
+	  the project generator.

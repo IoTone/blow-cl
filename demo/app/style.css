@@ -1,0 +1,13 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f4f4ef;
+  color: #22281f;
+  margin: 2rem auto;
+  max-width: 44rem;
+  padding: 0 1rem;
+  line-height: 1.55;
+}
+h1 { font-family: ui-monospace, monospace; }
+a { color: #2e6e4e; }
+code { background: #e7e9df; padding: 1px 4px; border-radius: 3px; }
+hr { border: 0; border-top: 1px solid #ccd0c2; }

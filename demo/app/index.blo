@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>(blow-cl)</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<h1>(blow-cl)</h1>
+<p>A Lisp web application framework for the JVM &mdash; the 2009 BLOW idea on a 2026 toolchain.</p>
+<hr>
+
+<h2>Congratulations!</h2>
+<p>You're running <b>blow-cl</b>. This page is an <code>index.blo</code> template: plain HTML with embedded Common Lisp, executed per request by cl-emb on ABCL.</p>
+
+<% (multiple-value-bind (second minute hour date month year)
+       (get-decoded-time)
+     (format *standard-output*
+             "<p>It is now ~2,'0d:~2,'0d:~2,'0d on ~d-~2,'0d-~2,'0d (server time).</p>"
+             hour minute second year month date)) %>
+
+<p>Also try <a href="/hello">/hello</a>, a compiled cl-who page with per-session state.</p>
+
+<h3>Lineage</h3>
+<p>blow-cl is a rewrite of <a href="https://github.com/atgreen/blow">BLOW</a> by Anthony Green (2007&ndash;2010), LGPLv3. Winstone became Jetty, the Makefile became Gradle, jfli became ABCL's native interop, and the vendored 2009 Lisp libraries became Quicklisp dependencies.</p>
+</body>
+</html>
