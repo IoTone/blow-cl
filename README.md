@@ -92,9 +92,6 @@ sessions, 404 handling. Not yet ported from the original:
 - `.war` packaging for external servlet containers (embedded Jetty only for now).
 - The `blow <appname>` project generator (use `demo/app` as a template).
 
-blow-cl is part of the [spicemine](https://github.com/IoTone) / codentea-ya effort to build
-source-control hosting that isn't a GitHub clone, on a deliberately polyglot JVM stack.
-
 ## Credits and license
 
 BLOW was written by Anthony Green <green@spindazzle.org>. blow-cl is a derived work: the
